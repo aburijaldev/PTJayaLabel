@@ -1,0 +1,439 @@
+:root {
+  --primary: #303030;
+  --bg: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", "SEGA LOGO FONT", "sans-serif";
+  background-color: var(--bg);
+  color: var(--primary);
+  min-height: 5000px;
+}
+
+/* Navbar start*/
+.navbar {
+  display: flex;
+  z-index: 9999;
+  background-color: #1c1d1d;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  right: 0;
+  left: 0;
+  position: fixed;
+}
+.navbar .navbar-logo {
+  height: 3rem;
+  width: 25rem;
+  display: flex;
+  cursor: pointer;
+}
+.navbar .navbar-logo img {
+  width: 13%;
+  display: inline-block;
+  margin: 0 4% 0.4rem;
+
+  border-radius: 0.3rem;
+}
+.navbar .navbar-logo h1 {
+  font-size: 1.8rem;
+  word-spacing: 10px;
+  color: #b6895b;
+  font-weight: 300;
+  font-family: "SEGA LOGO FONT";
+}
+.navbar .navbar-logo p {
+  color: #b6895b;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 300;
+  font-family: "Brush Script MT";
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 0.8rem;
+  font-weight: bold;
+}
+.navbar .navbar-nav a:hover {
+  color: #ffbd2f;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #ffbd2f;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: #ffbd2f;
+}
+#hamburger-menu {
+  display: none;
+}
+.navbar .widget {
+  height: 3rem;
+  width: 15rem;
+  background-color: #0db821;
+  bottom: 8vh;
+  border-radius: 1rem;
+  position: fixed;
+  right: 10%;
+  cursor: pointer;
+}
+.navbar .widget a {
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  font-weight: 500;
+  justify-content: center;
+}
+.navbar .widget .icon-wa {
+  padding: 0.2rem;
+  width: 15%;
+}
+/* Navbar Section end */
+
+/* Hero Section start*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin-top: 45%;
+  height: 15%;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(1, 1, 3, 1) 40%
+  );
+}
+.hero img {
+  width: 100%;
+  height: 100vh;
+  margin-top: 2%;
+}
+.hero .content {
+  padding: 1.4rem 2%;
+  position: absolute;
+  max-width: 40rem;
+}
+.hero .content h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  word-spacing: 10px;
+  margin-bottom: 0.5rem;
+  font-family: "SEGA LOGO FONT";
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.hero .content marquee {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 300;
+  color: #ffbd2f;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  /* mix-blend-mode: difference; */
+}
+.hero .sosmed {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.hero .sosmed a {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid #666;
+  color: #fff;
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .sosmed .a1 {
+  background-color: #3b5998;
+}
+.hero .sosmed .a2 {
+  background-color: #00aced;
+}
+.hero .sosmed .a3 {
+  background-color: #c13584;
+}
+.hero .sosmed a:hover {
+  color: #b6895b;
+  border: 1px solid #b6895b;
+}
+/* Hero Section end */
+
+/* Service start */
+.service,
+.work {
+  padding: 6rem 5% 2rem;
+  margin: 2rem 0 2rem;
+}
+.service h1,
+.work h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.service .services {
+  display: flex;
+}
+.service p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.service .box1,
+.service .box2,
+.service .box3,
+.service .box4,
+.service .box5,
+.service .box6,
+.service .box7 {
+  width: 45vw;
+  height: 10px;
+  position: relative;
+  background-color: #cecece;
+  margin-bottom: 0.7rem;
+}
+.service .box1::after {
+  content: "";
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  background-color: #f44336;
+}
+.service .box2::after {
+  content: "";
+  width: 80%;
+  height: 10px;
+  position: absolute;
+  background-color: #2196f3;
+}
+.service .box3::after {
+  content: "";
+  width: 70%;
+  height: 10px;
+  position: absolute;
+  background-color: #ffca28;
+}
+.service .box4::after {
+  content: "";
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  background-color: #f06292;
+}
+.service .box5::after {
+  content: "";
+  width: 80%;
+  height: 10px;
+  position: absolute;
+  background-color: #ffa000;
+}
+.service .box6::after {
+  content: "";
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  background-color: #303f9f;
+}
+.service .box7::after {
+  content: "";
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  background-color: #27ae60;
+}
+.service .content-service {
+  margin-left: 3%;
+  flex-wrap: wrap;
+}
+.service .content-service .services1 {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.service .services img {
+  height: 70px;
+  width: 70px;
+  padding: 2% 3%;
+}
+.service .content-service .p1 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+.service .content-service .p2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-indent: 30px;
+}
+/* Service end */
+
+/* work start */
+.work {
+  background-color: #f1f1f1;
+}
+.work .p-judul {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: -3%;
+}
+.work .content-work1 {
+  display: flex;
+  justify-content: center;
+}
+.work .work1 {
+  text-align: center;
+  margin-top: 3rem;
+  width: 35vw;
+  padding: 1rem 1%;
+}
+.work .work1 img {
+  width: 8rem;
+  height: 8rem;
+}
+.work .work1 .p1 {
+  word-spacing: 5px;
+  margin: 2rem 0 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.work .work1 .p2 {
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.work .content-work2 {
+  width: 99vw;
+  max-height: 800px;
+  margin-left: -6%;
+  margin-top: 2rem;
+  background-image: url(../img/00.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  display: flex;
+}
+
+.work .content-work2 .work2 {
+  width: 30vw;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(1, 1, 3, 0.7);
+  color: #fff;
+}
+.work .content-work2 .work2 h2 {
+  font-size: 3rem;
+  margin-top: 50px;
+}
+.work .content-work2 p {
+  font-size: 1.5rem;
+}
+/* work end */
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: var(--primary);
+    width: 17rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+  .service .services {
+    flex-wrap: wrap;
+  }
+  .hero::after {
+    margin-top: 110%;
+  }
+  .service .content-service {
+    margin-top: 5rem;
+  }
+  .service .box1,
+  .service .box2,
+  .service .box3,
+  .service .box4,
+  .service .box5,
+  .service .box6,
+  .service .box7 {
+    width: 85vw;
+  }
+  .work .content-work1,
+  .work .content-work2 {
+    flex-wrap: wrap;
+  }
+  .work .content-work2 .work2 {
+    width: 45vw;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+}
