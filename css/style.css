@@ -11,7 +11,6 @@ body {
   font-family: "Poppins", "SEGA LOGO FONT", "sans-serif";
   background-color: var(--bg);
   color: var(--primary);
-  min-height: 5000px;
 }
 
 /* Navbar start*/
@@ -33,7 +32,7 @@ body {
   cursor: pointer;
 }
 .navbar .navbar-logo img {
-  width: 13%;
+  width: 11%;
   display: inline-block;
   margin: 0 4% 0.4rem;
 
@@ -45,6 +44,7 @@ body {
   color: #b6895b;
   font-weight: 300;
   font-family: "SEGA LOGO FONT";
+  text-shadow: 1px 1px 3px rgba(182, 137, 91, 0.3);
 }
 .navbar .navbar-logo p {
   color: #b6895b;
@@ -52,6 +52,7 @@ body {
   font-style: italic;
   font-weight: 300;
   font-family: "Brush Script MT";
+  text-shadow: 1px 1px 3px rgba(182, 137, 91, 0.3);
 }
 .navbar .navbar-nav a {
   color: #fff;
@@ -59,6 +60,7 @@ body {
   font-size: 1.2rem;
   margin: 0 0.8rem;
   font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
 }
 .navbar .navbar-nav a:hover {
   color: #ffbd2f;
@@ -150,7 +152,7 @@ body {
   word-spacing: 10px;
   margin-bottom: 0.5rem;
   font-family: "SEGA LOGO FONT";
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  text-shadow: 1px 1px 3px rgba(254, 254, 255, 0.3);
 }
 .hero .content marquee {
   font-size: 2rem;
@@ -158,7 +160,7 @@ body {
   text-align: center;
   font-weight: 300;
   color: #ffbd2f;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  text-shadow: 1px 1px 3px rgba(255, 189, 47, 0.4);
   border-radius: 15px;
   margin-bottom: 2rem;
   /* mix-blend-mode: difference; */
@@ -200,6 +202,7 @@ body {
 .work {
   padding: 6rem 5% 2rem;
   margin: 2rem 0 2rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.3);
 }
 .service h1,
 .work h1 {
@@ -365,6 +368,159 @@ body {
   font-size: 1.5rem;
 }
 /* work end */
+
+/* Portfolio start */
+.portfolio {
+  padding: 6rem 5% 2rem;
+  margin: 2rem 0 2rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.3);
+}
+.portfolio h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  word-spacing: 5px;
+}
+.portfolio h1 span {
+  font-family: "SEGA LOGO FONT";
+  font-weight: 500;
+  font-size: 1.8rem;
+  word-spacing: 5px;
+}
+.portfolio .p1 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 7% 1.5rem;
+}
+.portfolio .p1 span {
+  font-weight: bold;
+}
+.portfolio .img-portfolio {
+  min-height: 100%;
+  text-align: center;
+}
+.portfolio .img-portfolio img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px;
+  background-color: #b6895b;
+  padding: 0.2rem;
+  margin: 0.5%;
+}
+.portfolio h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 3rem 0 3rem;
+}
+.portfolio .img-produk {
+  text-align: center;
+}
+.portfolio .img-produk img {
+  width: 250px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0.5%;
+  position: relative;
+}
+.slider {
+  width: 100vw;
+  height: 300px;
+  overflow: hidden;
+}
+.slides {
+  width: 300%;
+  height: 300px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  width: 99vw;
+  height: 100%;
+  background-color: #000000;
+  transition: 1s;
+}
+.slider h3 {
+  font-family: "sega logo font";
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.slider p {
+  color: #ffbd2f;
+  font-size: 1.4rem;
+  padding: 0 15%;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px rgb(251, 194, 35);
+}
+/* navigasi-manual */
+.navigasi-manual {
+  position: absolute;
+  margin-top: -30px;
+  display: flex;
+  width: 99vw;
+  justify-content: center;
+}
+.manual-btn {
+  border: 1px solid #ffbd2f;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 15px;
+}
+.manual-btn:hover {
+  background: #ffbd2f;
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -33.5%;
+}
+#radio3:checked ~ .first {
+  margin-left: -66.5%;
+}
+/* automatis slider */
+.navigasi-auto {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  margin-top: 270px;
+  width: 99vw;
+}
+.navigasi-auto div {
+  border: 1px solid #ffbd2f;
+  padding: 8px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigasi-auto div:not(:last-child) {
+  margin-right: 15px;
+}
+#radio1:checked ~ .navigasi-auto .auto-btn1 {
+  background: #ffbd2f;
+}
+#radio2:checked ~ .navigasi-auto .auto-btn2 {
+  background: #ffbd2f;
+}
+#radio3:checked ~ .navigasi-auto .auto-btn3 {
+  background: #ffbd2f;
+}
+
+/* Portfolio end */
+
 /* Media Queries */
 /* Laptop */
 @media (max-width: 1366px) {
