@@ -20,4 +20,4 @@ setInterval(function () {
   if (counter > 3) {
     counter = 1;
   }
-}, 7000);
+}, 10000);
