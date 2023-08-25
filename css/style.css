@@ -732,7 +732,7 @@ body {
   justify-content: space-between;
   background: var(--primary);
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .footer p {
   color: #fff;
@@ -741,7 +741,7 @@ body {
 }
 .footer p span {
   color: #fb9630;
-  margin: 0 0.5rem;
+  margin: 0 0.3rem;
   font-size: 1.2rem;
 }
 .footer-icon a {
@@ -849,8 +849,17 @@ body {
   .work .content-work2 .work2 {
     width: 45vw;
   }
-  .slider p{
+  .slider p {
     padding: 0 5%;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+  .footer p span {
+    font-size: 1.1rem;
+  }
+  .footer {
+    padding: 0.5rem 5%;
   }
 }
 /* Mobile Phone */
